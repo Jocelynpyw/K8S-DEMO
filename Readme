@@ -1,0 +1,20 @@
+## Prerequies (Vous devez avoir installer sur votre pc)
+
+-Docker
+-Kubernetes (minikube kubectl)
+
+## Docker
+
+-Telecharger l'image docker utlise avec cette commande: docker pull nanajanashia/k8s-demo-app:v1.0
+
+## Lancement de l'application
+
+##se placer a la racine du projet et executer les commandes suivantes :
+-minikube kubectl apply -f mongo-config.yaml
+-minikube kubectl apply -f mongo-secret.yaml
+-minikube kubectl apply -f mongo.yaml
+-minikube kubectl apply -f webapp.yaml
+
+## se rentre sur sont navigateur a l'adresse suivante : http://192.168.49.2:30100/
+
+## pour realiser cet exemple j'ai regarde la video suivante : https://www.youtube.com/watch?v=s_o8dwzRlu4
