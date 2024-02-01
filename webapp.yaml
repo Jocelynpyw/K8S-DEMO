@@ -11,7 +11,7 @@ spec:
       app: webapp
   template:
     metadata:
-      labels: ### Ce label permet d'etiquter tout les container d'un meme type
+      labels: ### Ce label permet d'etiquter tout les containers d'un meme type
         app: webapp
     spec:
       containers:
