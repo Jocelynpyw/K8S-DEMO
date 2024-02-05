@@ -1,4 +1,4 @@
-## Prerequies (Vous devez avoir installer sur votre pc)
+## Prerequies (Vous devez installer sur votre pc)
 
 -Docker
 -Kubernetes (minikube kubectl)
@@ -10,16 +10,22 @@
 ## Lancement de l'application
 
 ##se placer a la racine du projet et executer les commandes suivantes :
--minikube kubectl apply -f mongo-config.yaml
--minikube kubectl apply -f mongo-secret.yaml
--minikube kubectl apply -f mongo.yaml
--minikube kubectl apply -f webapp.yaml
--minikube kubectl apply -f horizontal-web-app-autoscaler.yaml
+
+- alias kubectl="minikube kubectl --"
+- kubectl apply -f mongo-config.yaml
+- kubectl apply -f mongo-secret.yaml
+- kubectl apply -f mongo.yaml
+- kubectl apply -f webapp.yaml
+- kubectl apply -f horizontal-web-app-autoscaler.yaml
 
 ## se rentre sur sont navigateur a l'adresse suivante : http://192.168.49.2:30100/
+
+## Pour avoir un etat visuel en temps reel de son cluster ouvrez un nouveau terminale et faire : Minikube dashboard
 
 ## pour realiser cet exemple j'ai regarde la video suivante : https://www.youtube.com/watch?v=s_o8dwzRlu4
 
 ## Bonne video pour comprendre l'achitecture de globale de K8S : https://www.youtube.com/watch?v=mDSWRBS7hvY
+
+## ou en anglais : https://www.youtube.com/watch?v=TlHvYWVUZyc
 
 ## Webinaire pour bien comprendre kubernetes

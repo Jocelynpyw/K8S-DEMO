@@ -30,6 +30,13 @@ spec:
                 secretKeyRef:
                   name: mongo-secret
                   key: mongo-password
+          volumeMounts:
+            - name: mongodb-data
+              mountPath: /data/db
+      volumes:
+        - name: mongodb-data
+          hostPath:
+            path: /home/jocelyn_pyw/mongo-backup/data/mongo-data-kubernetes
 
 ---
 apiVersion: v1

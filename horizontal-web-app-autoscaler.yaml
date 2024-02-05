@@ -7,8 +7,8 @@ spec:
     apiVersion: apps/v1
     kind: Deployment
     name: webapp-deployment
-  minReplicas: 1
-  maxReplicas: 8
+  minReplicas: 4
+  maxReplicas: 10
   metrics:
     - type: Resource
       resource:
